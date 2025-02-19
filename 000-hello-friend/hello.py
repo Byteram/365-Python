@@ -15,7 +15,7 @@ def greet() -> None:
     else:
         greeting = "Good evening"
     if 'name' in user_data:
-        print(f"{greeting}, {user_data.get("name")}! How can I assist you today?")
+        print(f"{greeting}, {user_data.get("first_name")}! How can I assist you today?")
     else:
         print(f"{greeting}! I see we haven't met before, have we? What's your name?")
         ask()
@@ -24,8 +24,10 @@ def greet() -> None:
 def ask() -> None:
     user_name = input("Enter your name: ").title().split()
     if user_name:
+        first_name = user_name[0]
         user_data['name'] = user_name
-        print("Nice to meet you, {0}!".format(user_name[0]))
+        user_data['first_name'] = first_name
+        print("Nice to meet you, {0}!".format(first_name))
     else:
         print("Please, enter a valid name.")
         ask()
