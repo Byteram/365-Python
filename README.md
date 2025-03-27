@@ -1,2 +1,2 @@
 # 365-Python
-Opensource Python book with 365 small programs to teach one the art of computer programming
+A journey through the Python programming language—one project at a time. Spanning beginner to advanced levels, each chapter presents a daily program rooted in the official Python documentation, enriched with practical context, real-world relevance, and creative exploration. Whether you're just starting out or deepening your mastery, this book guides you to write better code, understand Python's philosophy, and build a habit of thinking like a developer—one day, one program, one idea at a time.
